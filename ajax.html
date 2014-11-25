@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+        <script src='http://ajax.googleapis.com/'>
+        <script src='http://www.js/script.js'>
+
+                var employees = [
+                    {
+                        name: "david",
+                        phone: "800-555-5555"
+                    },
+                    {
+                        name: "Bob",
+                        phone: "303-123-4567"
+                    }
+                ];
+        $(document).ready
+
+                myApp();
+
+                function myApp(){
+
+                }
+
+                function render_employee_table(data){
+
+                    var html;
+
+                    data.forEach(function(e){
+
+                        html += "<tr>";
+                        html += "<td>" + e.name + "</td>";
+                        html += "<td>" + e.name + "</td>";
+                        html += "</tr>";
+                    })
+
+                    html += </table>
+                    return html;
+                }
+
+            </script>
+    <title></title>
+</head>
+<body>
+    <h1>Employee List!</h1>
+    <div class="employee_list"></div>
+    <table>
+        <tr>
+            <td>David</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

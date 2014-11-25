@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <script>
+        var clicked = false;
+
+        $("title").click(function(){
+
+        })
+    </script>
+    <style>
+        body{
+            background: gray;
+        }
+        .header {
+            text-align: center;
+            background: #ffffff;
+            top: 0;
+            margin: -16px -8px 0px -8px;
+            padding: 3px;
+        }
+        .list-container {
+            padding: auto;
+            margin: auto;
+            max-width: 70%;
+        }
+        .list{
+            display: none;
+            max-width: 70%;
+
+        }
+
+        .contacts-container{
+            border: 1px solid black;
+            padding: auto;
+            margin: 15px auto;
+            text-align: center;
+            max-width: 70%;
+
+        }
+
+        .footer{
+            border: 1px solid black;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            bottom: 0;
+        }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <title>FRUIT!</title>
+</head>
+<body>
+    <div class="header">
+        <p>This is the Header</p>
+    </div>
+    <div class="list-container">
+        <ul class="list"></ul>
+        <li class="things" id="milk">Milk</li>
+        <li class="things" id="eggs">Eggs</li>
+        <li class="things" id="oj">Oj</li>
+        <li class="things" id="salad">Salad</li>
+    </div>
+    <div class="contacts-container">
+        <thead id="phonetable">Contacts</thead>
+        <tbody>
+            <td>This</td>
+            <td>that</td>
+            <td>the other</td>
+        </tbody>
+
+    </div>
+    <div class="footer">
+        <p>This is the footer</p>
+    </div>
+</body>
+</html>

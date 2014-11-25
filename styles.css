@@ -1,0 +1,113 @@
+body {
+    font-family: sans-serif;
+    background-color: #fff;
+    color: forestgreen;
+}
+
+#specials,
+.columns{
+    width: 800px;
+    margin: 0 auto;
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#specials td {
+    line-height: 0.85;
+}
+
+.specialDishes thead td {
+    color: red;
+    font-size: 11px;
+    text-align: right;
+    padding-left: 16px;
+
+}
+
+.specialDishes thead td:nth-child(3) {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 0;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+.specialDishes tbody td:nth-child(3) {
+    width: 285px;
+    text-align: left;
+}
+.specialDishes tbody td {
+    border-bottom: 2px dotted forestgreen;
+    text-align: right;
+}
+.columns {
+    border: 0;
+    padding: 0;
+}
+
+.col {
+    float: left;
+    width: 360px;
+    padding-right: 40px;
+}
+
+.col :last-child{
+
+}
+
+.columns h1,
+.columns h2,
+.columns h3,
+.columns h4{
+    color: red;
+    text-align: center;
+}
+ .hours,
+ .columns p{
+    text-align: center;
+ }
+
+ .columns p{
+     color: red;
+ }
+ .labels {
+     overflow: hidden;
+     color: red;
+    font-size: 12px;
+ }
+
+ .labels span:first-child {
+     width: 290px;
+     display: inline-block;
+     text-align: center;
+ }
+.labels span:last-child {
+    margin-left: 20px;
+    display: inline-block;
+}
+.itemPrice {
+    float: right;
+}
+.spicy {
+    color: red;
+}
+.spicy .itemNumber {
+    background: url(pepper.gif) no-repeat 30px 6px;
+    padding-right: 16px;
+}
+.columns .col:last-child .spicy .itemNumber{
+    background-position: 21px;
+}
+.lunchSpecials {
+    border-bottom: 7px solid red;
+    padding-bottom: 7px;
+}
+.itemPrice{
+    padding-left: 2px;
+}
+.itemPrice.small {
+    padding-left: 16px;
+}
+

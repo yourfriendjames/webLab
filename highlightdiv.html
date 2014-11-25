@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
+    <title></title>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            var boxes = $('.boxes');
+            var btn = $('.button');
+
+            boxes.on('mouseenter', function () {
+                $(this).addClass('starred');
+                $(this).prevAll('.boxes').addClass('starred');
+            });
+
+            boxes.on('mouseleave', function () {
+                $(this).removeClass('starred');
+                $(this).prevAll('.boxes').removeClass('starred');
+            });
+
+            boxes.click(function () {
+                (boxes).removeClass('current');
+                $(this).addClass('current');
+                $(this).prevAll(".boxes").addClass("current");
+            });
+
+           btn.click(function() {
+                (boxes).removeClass('current');
+               // $(this).removeClass('current');
+            });
+        });
+
+    </script>
+    <style>
+        body{
+            font-family: cabin;
+        }
+        #box-container{
+            margin: 0 auto;
+            max-width: 70%;
+            max-height: 1500px;
+        }
+        #all_boxes{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15px;
+        }
+
+        .boxes {
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+            margin-top: 20px;
+            border: 1px solid rgb(111, 61, 69);
+            background-color: palevioletred;
+            transform: all, 5s, ease;
+        }
+
+        .boxes:hover, .starred, .current {
+            background-color: palegoldenrod;
+        }
+
+        .btn {
+            background: #3498db;
+            background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+            background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+            background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+            background-image: -o-linear-gradient(top, #3498db, #2980b9);
+            background-image: linear-gradient(to bottom, #3498db, #2980b9);
+            -webkit-border-radius: 28;
+            -moz-border-radius: 28;
+            border-radius: 28px;
+            color: #ffffff;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+            margin-top: 100px;
+            max-width: 60px;
+            max-height: 30px;
+        }
+
+        .btn:click, {
+
+        }
+
+        .btn:hover {
+            background: #3cb0fd;
+            background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+            background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+            background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+            background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+            background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="box-container">
+        <div id="all_boxes" class="highlight">
+            <h2>Change Box Colors</h2>
+            <div id="box1" class="boxes"></div>
+            <div id="box2" class="boxes"></div>
+            <div id="box3" class="boxes"></div>
+            <div id="box4" class="boxes"></div>
+            <div id="box5" class="boxes"></div>
+        </div>
+        <div id="button" class="btn">Clear</div>
+        </div>
+    </div>
+</body>
+</html>

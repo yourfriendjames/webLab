@@ -1,0 +1,27 @@
+/*.parent{*/
+    /*background-color: #ccc;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*.child{*/
+    /*background: lightblue;*/
+    /*height: 50px;*/
+    /*width: 50px;*/
+    /*float: left;*/
+/*}*/
+
+.parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.child{
+    height:50px;
+    width: 50px;
+    margin: 1em;
+    background-color: orange;
+}
+
